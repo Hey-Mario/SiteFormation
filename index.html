@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+    <script src="JS/web.js"></script>
+</head>
+
+<body>
+    <!-- Section 1 : tete de la Page  -->
+    <header class="header">
+        <div class="textHeader">
+            <a href="#" class="logo">Dev Success</a>
+            <h6>Des Formations Informatique à la Porter de Tous</h6>
+        </div>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#" onclick="toggleMenu();">Acceuil</a></li>
+            <li><a href="#about" onclick="toggleMenu();">A Propos</a></li>
+            <li><a href="#format" onclick="toggleMenu();">Formation</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+        <ul class="menu" id="web">
+            <li>
+                <a href="#" onclick="toggleMenu();"><img src="IMG/facebook_48px.png" alt="" srcset=""></a>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu();"><img src="IMG/twitter_48px.png" alt="" srcset=""></a>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu();"><img src="IMG/whatsapp_48px.png" alt="" srcset=""></a>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu();"><img src="IMG/gmail_logo_48px.png" alt="" srcset=""></a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Section 2 : corps de la Page  -->
+    <Section class="banniere">
+        <div class="contenu">
+            <h1>formation</h1>
+            <h2>développeur</h2>
+            <h3><span class="full">full</span><span class="stack">stack</span></h3>
+            <a href="#" class="btn">Commencer Maintenant</a>
+        </div>
+    </Section>
+
+    <section id="about" class="about">
+        <div class="left">
+            <h2>à propos de pous</h2>
+            <p class="p1">
+                Dev Success est une groupe d'individue composé de Jeune Informaticien soif de savoir et de partage de connaissance! <br>Cette groupe à été fonder en 2021 par le <span>Jeune Etudiant en L1 de ESTI</span> qui est TSIDIANY Raharison Muriel,
+                un ancien éléve de ESMIA!
+                <details id="offre">
+                    <p class="p2">
+                        Et maintenant le Groupe est constitué de plusieur éléve en Branche IDEV et RSI de <span>ESTI</span> et de <span>ESMIA</span> ! <br> De ce fait cette groupe participe à former en développement full-stack à des <span>Prix abordables !</span>
+                    </p>
+                </details>
+                <h2>membre du groupe</h2>
+                <div class="listeMembre">
+                    <ul>
+                        <li><img src="ICON/checkmark_48px.png" alt=""></li>
+                        <li><img src="ICON/checkmark_48px.png" alt=""></li>
+                        <li><img src="ICON/checkmark_48px.png" alt=""></li>
+                        <li><img src="ICON/checkmark_48px.png" alt=""></li>
+                        <li><img src="ICON/checkmark_48px.png" alt=""></li>
+                    </ul>
+                    <ul>
+                        <li>TSIDIANY Raharison Muriel </li>
+                        <li>Mionja ..................</li>
+                        <li>Anthonio ................</li>
+                        <li>Fitiavana ...............</li>
+                        <li>Mario ...................</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="BACKGROUND/livre.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de formation de mario  -->
+    <section id="format" class="format">
+        <div id="background">
+            <!-- L'en tête de la page -->
+            <section id="tete">
+                <div id="tetetxt">
+                    <h1>Formation professionnelle</h1>
+                    <h2>Avec l'équipe de <span class="dev">Dev Success</span> ...</h2>
+                </div>
+            </section>
+
+            <!-- Contenu de la page -->
+            <div id="container">
+                <!-- celle de gauche -->
+                <div class="nav">
+                    <div id="search">
+                        <input type="search" name="search" id="searchbox" placeholder="Recherche">
+                    </div>
+                    <div class="toutmenu">
+                        <div class="menuform">
+                            <h2>HTML 5 et CSS 3</h2>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="logo/html_5_48px.png" alt="logo">HTML 5</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/css3_48px.png" alt="logo">CSS 3</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/bootstrap_48px.png" alt="logo">Bootstrap</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/medium_icons_40px.png" alt="logo">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/3ds_max_64px.png" alt="logo">Graphiques</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/color_palette_48px.png" alt="logo">Couleurs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menuform">
+                            <h2>JavaScript</h2>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="logo/python_48px.png" alt="logo">Apprendre le JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/java_48px.png" alt="logo">Apprendre le jQuery</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/javascript_48px.png" alt="logo"> Apprendre le JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/php_logo_64px.png" alt="logo"> PHP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menuform">
+                            <h2>Back-end</h2>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="logo/python_48px.png" alt="logo">Python</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/java_48px.png" alt="logo">Java</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/javascript_48px.png" alt="logo"> JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/php_logo_64px.png" alt="logo"> PHP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menuform">
+                            <h2>Back-end</h2>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="logo/python_48px.png" alt="logo">Python</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/java_48px.png" alt="logo">Java</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/javascript_48px.png" alt="logo"> JavaScript</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="logo/php_logo_64px.png" alt="logo"> PHP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- celle de droite -->
+                <div class="formation">
+
+                    <div class="firstrow">
+                        <article id="htmlS">
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre le HTML 5</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article id="cssS">
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre le CSS 3</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article id="bootS">
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre le Bootstrap</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                    <div class="secondrow">
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre les Icons</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre les graphiques</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Apprendre les couleurs</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                    <div class="firstrow">
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                    <div class="secondrow">
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                    <div class="firstrow">
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                    <div class="secondrow">
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Developpement web</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                        <article>
+                            <div class="articleImg"><img src="background/diplome.jpg" alt="image" id="articleImg"></div>
+                            <h2>$60</h2>
+                            <h3>Dev Mobile</h3>
+                            <input type="button" value="ACHETER" id="achat">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 : detaille de formation -->
+    <section class="forma">
+        <div class="toutContenue">
+            <div class="left">
+                <div class="liste">
+                    <ul>
+                        <li><button id="Offre" onclick="myOffre()">les offres</button></li>
+                        <li><button id="Objectif" onclick="myObjectif()">les objectifs</button></li>
+                        <li><button id="Prerequise" onclick="myPrerequise()">les prérequises</button></li>
+                        <li><button id="Instructeur" onclick="myInstructeur()">les instructeurs</button></li>
+                        <li><button id="Autre" onclick="myAutre()">Autres</button></li>
+                    </ul>
+                </div>
+                <div class="contenue">
+                    <dialog id="initial">
+                        <img name="mySlide">
+                        <div class="textSlide">
+                            <h1>Choisissez le meilleur</h1>
+                            <h2>Choisissez notre équipe : <br> Dev Success</h2>
+                        </div>
+                    </dialog>
+                    <dialog id="myOffre" style="display: none;">
+                        <p>Mon offre</p>
+                    </dialog>
+                    <dialog id="myObjectif" style="display: none;">
+                        <p>Mon objectif</p>
+                    </dialog>
+                    <dialog id="myPrerequise" style="display: none;">
+                        <h2>Besoin matériel :</h2>
+                        Un ordinateur avec : un éditeur de texte(Microsoft Visual Studio Code, notepad++, sublime-text), Ram(2Go ou plus), un navigateur web(Google Chrome, Firefox, IE9, ...)</li>
+                    </dialog>
+                    <dialog id="myInstructeur" style="display: none;">
+                        <p>Mon Intsructeur</p>
+                    </dialog>
+                    <dialog id="myAutre" style="display: none;">
+                        <p>Mon Autre</p>
+                    </dialog>
+                </div>
+            </div>
+            <div class="right">
+                <div class="video">
+                    <img src="BACKGROUND/chose.jpg" alt="">
+                </div>
+                <div class="infoPage">
+                    <div class="colone1">
+                        <ul>
+                            <li><img src="ICON/read_24px.png" alt=""></li>
+                            <li><img src="ICON/puzzle_30px.png" alt=""></li>
+                            <li><img src="ICON/time_50px.png" alt=""></li>
+                            <li><img src="ICON/user_groups_50px.png" alt=""></li>
+                            <li><img src="ICON/approval_30px.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="colone2">
+                        <ul>
+                            <li>Lecteur</li>
+                            <li>Quizzes</li>
+                            <li>Duration</li>
+                            <li>Students</li>
+                            <li>Assessments</li>
+                        </ul>
+                    </div>
+                    <div class="colone3">
+                        <ul>
+                            <li>0</li>
+                            <li>15</li>
+                            <li>10 weeks</li>
+                            <li>150</li>
+                            <li>Yes</li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="recherchee">
+                        <div class="entree">
+                            <input type="text" name="search" id="" placeholder="Entrer le mot à Chercher">
+                        </div>
+                        <div class="buttonRecherchee">
+                            <input type="button" value="Chercher">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Section de corps de Mionja  -->
+    <section id="contact" class="corps">
+        <div class="contact" id="lien_contact">
+            <div class="haut">
+                <ul>
+                    <li>
+                        <a href="#"><img src="IMG/address_50px.png" alt="" class="addr"></a>
+                    </li>
+                    <li>
+                        <h4>Addresse</h4>
+                    </li>
+                    <li>
+                        <p>Antanimena, Antananarivo 101</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#"><img src="IMG/mail_50px.png" alt="" class="mail"></a>
+                    </li>
+                    <li>
+                        <h4>email</h4>
+                    </li>
+                    <li>
+                        <p>devsucess@gmail.mg</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#"><img src="IMG/phone_50px.png" alt=""></a>
+                    </li>
+                    <li>
+                        <h4>numéro</h4>
+                    </li>
+                    <li>
+                        <p>+261 34 00 000 00</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="bas">
+                <div class="gauche">
+                    <p>magni deserunt cumque id placeat officia aperiam repellendus odio. Dignissimos necessitatibus quia ipsa laborum sequi, delectus, sit quis in officia cupiditate at illo obcaecati hic animi placeat magnam similique? dolor, sit amet consectetur
+                        adipisicing elit. Quod veniam necessitatibus ipsam error distinctio ipsum laborum officia, vero reprehenderit perspiciatis, reiciendis facere. Ut beatae velit quidem expedita deleniti saepe ipsa.</p>
+                    <img src="BACKGROUND/bases.jpg" alt="">
+                </div>
+                <div class="droite">
+                    <h3>Contactez nous</h3>
+                    <p>Vous pouvez nous contacter et nous donner des suggestions si vous en avez, notre equipe est disponnible 24/7 pour vous aider</p>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><input type="text" name="" id="" placeholder="Nom"></td>
+                                <td><input type="email" name="" id="" placeholder="E-mail"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="" id="" placeholder="Numero Téléphone"></td>
+                                <td><input type="text" name="" id="" placeholder="Sujet"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="" id="" cols="50" rows="5" placeholder="Entrer votre Message"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <span><input type="submit" value="Envoyer" class="envoyer"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- section 3 : pieds de la page -->
+    <section class="footer">
+        <div>
+            <ul class="A">
+                <li>
+                    <a href="#"><img src="IMG/facebook_circled_50px.png" alt="reseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="IMG/gmail_50px.png" alt="reseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="IMG/twitter_50px.png" alt="reseaux sociaux"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="IMG/instagram_logo_50px.png" alt="reseaux sociaux"></a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <span class="B">
+                <a href="#"> blabla </a>
+                <a href="#"> blabla </a>
+                <a href="#"> blabla</a>
+            </span>
+        </div>
+
+
+        <p class="right">Tout droits reservé</p>
+    </section>
+</body>
+
+</html>
