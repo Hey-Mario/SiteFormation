@@ -68,7 +68,7 @@ header div h6 {
 
 .menu li a:hover {
     transform-origin: center;
-    border-bottom: 4px solid dodgerblue;
+    border-bottom: 4px solid #e91e63;
 }
 
 #web li a:hover {
@@ -76,7 +76,7 @@ header div h6 {
 }
 
 .menu a {
-    color: rgb(50, 42, 42);
+    color: #000000;
     text-decoration: none;
     margin-left: 30px;
     font-size: 20px;
@@ -124,7 +124,8 @@ li a img {
 .contenu h3 {
     display: inline;
     margin-left: 30px;
-    color: rgb(245, 221, 7);
+    /* color: rgb(245, 221, 7); */
+    color: #1289A7;
     font-size: 3em;
     font-weight: 700;
     font-style: oblique;
@@ -139,7 +140,7 @@ li a img {
     font-size: 1.5em;
     color: #fff;
     text-decoration: none;
-    background: rgb(245, 221, 7);
+    background: #e91e63;
     padding: 10px 20px;
     display: block;
     text-align: center;
@@ -149,14 +150,10 @@ li a img {
 }
 
 .btn:hover {
-    background: #1abc9c;
+    background: #1289A7;
     color: #fff;
     font-weight: 700;
     letter-spacing: 4px;
-}
-
-section.about {
-    padding: 100px;
 }
 
 section.about {
@@ -165,6 +162,7 @@ section.about {
     background-color: #efefef;
     position: relative;
     /* margin: 0 15px; */
+    padding: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -189,10 +187,11 @@ section.about div {
     background-color: #fff;
     border-radius: 5px;
     padding: 30px 15px;
+    display: block;
 }
 
 .left h2 {
-    color: #000;
+    color: #000000;
     font-size: 2em;
     font-weight: 300;
     text-transform: capitalize;
@@ -204,13 +203,15 @@ section.about div {
 }
 
 .p1 span {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     width: 700;
-    color: #a57810;
+    border-bottom: 1px solid #e91e63;
+    color: #e91e63;
+    /* #e91e63 */
 }
 
 .p2 span {
-    color: deepskyblue;
+    color: #1289A7;
     font-weight: 700;
 }
 
@@ -247,7 +248,7 @@ section.about div {
 /* CSS DU JAVASCRIPT  */
 
 header.sticky {
-    background: #fff;
+    background: #ffffff;
     padding: 10px 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
 }
@@ -258,7 +259,7 @@ header.sticky h6 {
 }
 
 header.sticky .menu li a {
-    color: #000;
+    color: #000000;
     transition: 0.2s;
 }
 
@@ -351,6 +352,14 @@ header.sticky #web li a:hover {
     padding: 0;
     display: flex;
     height: 100%;
+}
+
+dialog#myPrerequise {
+    padding: 10px;
+}
+
+dialog#myPrerequise ul {
+    padding: 15px 100px;
 }
 
 .left .contenue #initial .textSlide {
@@ -868,34 +877,95 @@ input.envoyer:hover {
 
 /* FOOTER */
 
-section.footer {
-    /* height: auto; */
-    background: linear-gradient(to right, #000, black, #ffd700);
+.footer {
+    line-height: 1.5;
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer .contenus {
+    max-width: 1170px;
+    /* background-color: #1289A7; */
+    margin: auto;
+}
+
+.contenus .ligne {
+    display: flex;
+}
+
+.ligne .colonneS {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.colonneS h4 {
+    font-size: 18px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin: 15px 15px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    /* background-color: red; */
 }
 
-.footer div ul {
-    display: flex;
-    /* margin: 15px; */
-    padding: 30px 0 0 0;
+.colonneS h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
-.footer div ul li {
+.colonneS ul {
     list-style: none;
-    width: 100%;
 }
 
-.A li a img {
-    width: 30px;
-    margin-left: 20px;
+.colonneS ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
-.footer div {
+.colonneS ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.colonneS ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.colonneS .reseauSocial {
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.colonneS .reseauSocial a {
+    display: flex;
     flex-direction: row;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.colonneS .reseauSocial a:hover {
+    background-color: #ffffff;
+}
+
+.footer p.copy {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 50px 0 0 -50px;
 }
